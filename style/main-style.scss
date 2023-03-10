@@ -1332,6 +1332,19 @@ footer {
             height: 50%;
         }
     }
+
+    .image-slider {
+        .image-slide-item {
+            .item {
+                img.slider-image {
+                    width: 60%;
+                    border-radius: 10px;
+                    margin: 0 0 1.6px;
+                    opacity: 1;
+                }
+            }
+        }
+    }
 }
 
 
