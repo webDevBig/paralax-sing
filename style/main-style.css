@@ -981,6 +981,9 @@ footer .post-box .follow-item img {
   }
 }
 @media all and (max-width: 400px) {
+  .black-btn > span {
+    font-size: 12px;
+  }
   .section1 .section1-title {
     font-size: 50px;
     line-height: 100%;
