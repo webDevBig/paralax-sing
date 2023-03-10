@@ -485,6 +485,7 @@ header {
     }
 
     &.section4 {
+        overflow: hidden;
         transform: scale(0.8) translate(0, -100%);
         position: relative;
 
@@ -535,7 +536,7 @@ header {
         align-items: flex-start;
         width: 50%;
         height: 100%;
-        max-width: 475px;
+        // max-width: 475px;
         opacity: 0;
 
         &[data-aos=zoom-in] {
