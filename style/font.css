@@ -1,0 +1,22 @@
+@font-face {
+    font-family: 'IBMPlexSans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('IBMPlexSans-Regular'), url('../font/IBM_Plex_Sans/IBMPlexSans-Regular.ttf');
+}
+
+@font-face {
+    font-family: 'IBMPlexSans-Medium';
+    font-style: normal;
+    font-weight: 500;
+    src: local('IBMPlexSans-Medium'), url('../font/IBM_Plex_Sans/IBMPlexSans-Medium.ttf');
+}
+
+@font-face {
+    font-family: 'ARCSans-Regular';
+    font-style: normal;
+    font-weight: 400;
+    src: local('ARCSans-Regular'), url('../font/ARCSans-Regular/OpenType-TT/ARCSansV1.ttf');
+}
+
+

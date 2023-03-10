@@ -1,0 +1,489 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/font.css">
+    <link rel="stylesheet" href="style/main-style.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script src="script/is.min.js"></script>
+    <script>
+        var link = document.createElement('link');
+        link.rel = "stylesheet";
+        if (is.safari()) {
+            link.href = "style/video-style-safari.css";
+        } else  {
+            link.href = "style/video-style.css";
+        }
+        document.head.appendChild(link);
+    </script>
+    <title>Document</title>
+</head>
+
+<body>
+
+    <header class="hide">
+        <div class="content">
+            <a href="index.html" class="logo"><img alt="logo" src="img/ARC-Logomark.svg" />ARC COMMUNITY </a>
+            <ul class="menu">
+                <li><a href="#" class="menu-item">MEMBERSHIP</a></li>
+                <li><a href="#" class="menu-item">BUZZ</a></li>
+                <li><a href="#" class="menu-item">STELLARS</a></li>
+            </ul>
+            <div class="box">
+                <a href="#" class="menu-item">Login</a>
+                <button class="start black-btn button" cursor="link"><span>Start Journey</span></button>
+                <div class="cursor"></div>
+                <nav role="navigation">
+                    <div id="menuToggle">
+                      <input type="checkbox" />
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    <ul id="menu">
+                        <li><a href="#" class="menu-item">MEMBERSHIP</a></li>
+                        <li><a href="#" class="menu-item">BUZZ</a></li>
+                        <li><a href="#" class="menu-item">STELLARS</a></li>
+                    </ul>
+                   </div>
+                  </nav>
+            </div>
+            
+        </div>
+    </header>
+    <div class="section1">
+        <div class="cloud cloud-left"></div>
+        <div class="cloud cloud-left"></div>
+        <div class="cloud cloud-right"></div>
+        <div class="section-content" id="animate">
+            <div class="content section1-logo-content">
+                <a href="index.html" class="section1-logo"><img alt="logo" src="img/ARC-Logomark.svg" />ARC COMMUNITY
+                </a>
+            </div>
+            <div class="arc-img"></div>
+        </div>
+
+        <div class="text-content" id="text-content">
+            <h1 class="section1-title" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="600"
+                data-aos-delay="300" data-aos-anchor="#scrool-text">ARC
+                COMMUNITY
+            </h1>
+            <p class="scrool-text" id="scrool-text" data-aos="fade-up" data-aos-easing="linear" data-aos-duration="400"
+                data-aos-delay="600">Scroll to begin
+                <span></span>
+            </p>
+        </div>
+    </div>
+    <section class="main-content" cursor="link">
+        <div class="section2" id="section2">
+            <div class="content" id="pinContainer">
+                <div class="text-content">
+                    <div class="dot" data-scroll="1">
+                        <span class="spine-dot-white">Welcome</span>
+                    </div>
+                    <div class="dot" data-scroll="2">
+                        <span class="spine-dot-white">to</span>
+                    </div>
+                    <div class="dot" data-scroll="3">
+                        <span class="spine-dot-white">Asia’s</span>
+                    </div>
+                    <div class="dot" data-scroll="4">
+                        <span class="spine-dot-white">most</span>
+                    </div>
+                    <div class="dot" data-scroll="5">
+                        <span class="spine-dot-white">curated</span>
+                    </div>
+                    <div class="dot" data-scroll="6">
+                        <span class="spine-dot-white">members-only</span>
+                    </div>
+                    <div class="dot" data-scroll="7">
+                        <span class="spine-dot-white">community.</span>
+                    </div>
+                    <div class="dot" data-scroll="8">
+                        <span class="spine-dot-white">Walk</span>
+                    </div>
+                    <div class="dot" data-scroll="9">
+                        <span class="spine-dot-white">with</span>
+                    </div>
+                    <div class="dot" data-scroll="10">
+                        <span class="spine-dot-white">us.</span>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+        <div class="slider second-slider">
+            <div class="stiky">
+                <div class="video-bg">
+                    <picture>
+                        <source srcset="video/arcbg-6secloop.mp4" type="video/mp4" src="video/arcbg-6secloop.mp4">
+                        <img src="img/video-bg.png" alt="" />
+                    </picture>
+                    <video id="video-background" muted playsinline loop autoplay="autoplay">
+                        <source type="video/mp4" src="video/arcbg-6secloop.mp4">
+                        </source>
+                    </video>
+                    <script>
+                        const video = document.getElementById('video-background');
+                        video.play();
+                        // $("#video-background").get(0).play();
+                    </script>
+                </div>
+
+                <section class="section3 section" id="section3">
+                    <div class="content">
+                        <div class="text-block" data-aos="zoom-in" data-aos-duration="1600">
+                            <p class="note">Like No Other</p>
+                            <h3 class="title">SOCIAL VENTURE STUDIO</h3>
+                            <p class="text">We are a first-of-its-kind social venture that unleashes the power of the
+                                community to craft new ideas and IPs. Our house rules are simple. We learn, have fun and
+                                co-create.</p>
+                        </div>
+                        <img alt="" src="img/section3-img.png" data-aos="zoom-in" data-aos-duration="1600">
+                    </div>
+                </section>
+                <section class="section4 section" id="section4">
+                    <div class="content">
+                        <div class="text-block" data-aos="zoom-in" data-aos-duration="1600">
+                            <p class="note">Meet our members</p>
+                            <h3 class="title">Stellars of ARC</h3>
+                            <p class="text">Visionaries. Creators. Firebrands. We go by many labels. But at ARC,
+                                we are all contribution-minded members of a passionate community.</p>
+                            <button class="start black-btn button" cursor="link"><span>Start Journey</span></button>
+                            <div class="cursor"></div>
+                        </div>
+                        <div class="image-slider" data-aos="zoom-in" data-aos-duration="1600">
+                            <div class="image-slide-container">
+                                <div class="image-slide-item image-slide-item1 active" data-aos="zoom-in"
+                                    data-aos-duration="1600">
+                                    <div class="item">
+                                        <img alt="" src="img/people/Darius.jpeg" class="slider-image" />
+                                        <div class="text-box">
+                                            <p class="name">Darius Sit</p>
+                                            <p class="position">Founder • QCP Capital</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" src="img/people/Kevin.jpeg" class="slider-image" />
+                                        <div class="text-box">
+                                            <p class="name">Kevin Wu</p>
+                                            <p class="position">Founder • GRAYCRAFT</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" src="img/people/Irene.jpeg" class="slider-image" />
+                                        <div class="text-box">
+                                            <p class="name">Irene Kim</p>
+                                            <p class="position">Entrepreneur • IRENEISGOOD</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="img/people/Deeps.jpeg" />
+                                        <div class="text-box">
+                                            <p class="name">Deeps De Silva</p>
+                                            <p class="position">Founder • Samadhi Ventures</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="img/people/tai.jpeg" />
+                                        <div class="text-box">
+                                            <p class="name">Tai</p>
+                                            <p class="position">Co-founder • Talo</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="img/people/ray.jpeg" />
+                                        <div class="text-box">
+                                            <p class="name">Ray Chan</p>
+                                            <p class="position">CEO • 9GAG</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="img/people/nicole_zhang.jpeg" />
+                                        <div class="text-box">
+                                            <p class="name">Nicole Zhang</p>
+                                            <p class="position">Partner • Lingfeng Innovation Fund</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="img/people/yusho.jpeg" />
+                                        <div class="text-box">
+                                            <p class="name">Yusho Liu</p>
+                                            <p class="position">Co-founder, CEO • Coinhako</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="img/people/lil_bubble.jpeg" />
+                                        <div class="text-box">
+                                            <p class="name">lilbubble</p>
+                                            <p class="position">Artist • Crypto Meme Musician</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="image-slide-item image-slide-item2" data-aos="zoom-in"
+                                    data-aos-duration="1600">
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="img/people/shaun_heng.jpeg" />
+                                        <div class="text-box">
+                                            <p class="name">Shaun Heng</p>
+                                            <p class="position">Head of Spartan Labs</p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="img/people/zaf.jpeg" />
+                                        <div class="text-box">
+                                            <p class="name">Zaf</p>
+                                            <p class="position">Director of Digital Strategy and Partnerships • Animoca
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="img/people/dharni.jpeg" />
+                                        <div class="text-box">
+                                            <p class="name">Dharni</p>
+                                            <p class="position">Beatboxer and Co-founder • Tezarekt</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="img/people/jessie.jpeg" />
+                                        <div class="text-box">
+                                            <p class="name">JessieMorii</p>
+                                            <p class="position">Founder • Froyoverse</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="img/people/foa_paige_parker.jpeg" />
+                                        <div class="text-box">
+                                            <p class="name">Paige Parker</p>
+                                            <p class="position">Author, podcaster, board member • United Women Singapore
+                                            </p>
+                                        </div>
+
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="img/people/oct_FOA_YiMing.jpeg" />
+                                        <div class="text-box">
+                                            <p class="name">Yi Ming Ng</p>
+                                            <p class="position">CEO • Tribe and StackUp</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="img/people/danny.jpeg" />
+                                        <div class="text-box">
+                                            <p class="name">Danny Chong</p>
+                                            <p class="position">Co-Founder & CEO • Tranchess</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="img/people/wes_2.jpeg" />
+                                        <div class="text-box">
+                                            <p class="name">Wesley Ng</p>
+                                            <p class="position">Co-Founder and CEO • CASETiFY</p>
+                                        </div>
+
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="img/people/foa_patrick.jpeg" />
+                                        <div class="text-box">
+                                            <p class="name">Patrick Lee</p>
+                                            <p class="position">Co-founder & Founding CEO • Rotten Tomatoes</p>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="image-slide-item image-slide-item3" data-aos="zoom-in"
+                                    data-aos-duration="1600">
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="img/people/Jan_SOA-Bings.png" />
+                                        <div class="text-box">
+                                            <p class="name">Bing Wang</p>
+                                            <p class="position">Partner • Meta Law & Sublime Ventures</p>
+                                        </div>
+                                    </div>
+                                    <!-- <div class="item">
+                                        <img alt="" class="slider-image" src="" />
+                                        <div class="text-box">
+                                            <p class="name"></p>
+                                            <p class="position"></p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image"  src=""/>
+                                        <div class="text-box">
+                                            <p class="name"></p>
+                                            <p class="position"></p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="" />
+                                        <div class="text-box">
+                                            <p class="name"></p>
+                                            <p class="position"></p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="" />
+                                        <div class="text-box">
+                                            <p class="name"></p>
+                                            <p class="position"></p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="" />
+                                        <div class="text-box">
+                                            <p class="name"></p>
+                                            <p class="position"></p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="" />
+                                        <div class="text-box">
+                                            <p class="name"></p>
+                                            <p class="position"></p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="" />
+                                        <div class="text-box">
+                                            <p class="name"></p>
+                                            <p class="position"></p>
+                                        </div>
+                                    </div>
+                                    <div class="item">
+                                        <img alt="" class="slider-image" src="" />
+                                        <div class="text-box">
+                                            <p class="name"></p>
+                                            <p class="position"></p>
+                                        </div>
+                                    </div> -->
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
+        </div>
+        <!-- <div class="dots-box hide">
+            <a class="linkDot active" href="#section2"></a>
+            <a class="linkDot" href="#section3"></a>
+            <p class="linkDot" id="show-section4"></p>
+        </div> -->
+    </section>
+
+    <footer>
+        <div class="content">
+            <div class="row">
+                <div class="clm">
+                    <a href="index.html" class="logo"><img alt="logo" src="img/ARC-Logomark.svg" /> </a>
+                    <p class="footer-title">Asia’s most curated members-only community for impactful and influential
+                        individuals in the Global Asian Diaspora.</p>
+                    <div class="social-box">
+                        <a class="social-item social-twit" href="https://twitter.com/arcthecommunity"
+                            target="_blank"></a>
+                        <a class="social-item social-inst" href="https://www.instagram.com/arcthecommunity/"
+                            target="_blank"></a>
+                        <a class="social-item social-in"
+                            href="https://www.linkedin.com/company/arccommunity/mycompany/ " target="_blank"></a>
+                    </div>
+                </div>
+                <div class="clm">
+                    <p class="footer-menu-title">ARC</p>
+                    <a href="#" class="footer-menu-item">About</a>
+                    <a href="#" class="footer-menu-item">Membership</a>
+                    <a href="#" class="footer-menu-item">What’s up</a>
+                </div>
+                <div class="clm">
+                    <p class="footer-menu-title">Get in touch</p>
+                    <a href="#" class="footer-menu-item">Contact</a>
+                    <a href="#" class="footer-menu-item">Jobs</a>
+                    <a href="#" class="footer-menu-item">Media</a>
+                </div>
+                <div class="clm">
+                    <p class="footer-menu-title">Follow on Instagram</p>
+                    <div class="post-box">
+                        <a class="follow-item"><img alt="instagram-post"
+                                src="img/instagram/arcthecommunity_1.png" /></a>
+                        <a class="follow-item"><img alt="instagram-post"
+                                src="img/instagram/arcthecommunity_2.png" /></a>
+                        <a class="follow-item"><img alt="instagram-post"
+                                src="img/instagram/arcthecommunity_3.png" /></a>
+                        <a class="follow-item"><img alt="instagram-post"
+                                src="img/instagram/arcthecommunity_4.png" /></a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <p>Copyright © 2023 All Rights Reserved</p>
+                <a href="#">Terms and Conditions</a>
+                <a href="#">Privacy Policy</a>
+            </div>
+        </div>
+    </footer>
+
+
+
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
+    <script>
+        // var $page = $('html, body');
+        // $('a.linkDot[href*="#"]').click(function () {
+        //     $('a.linkDot[href*="#"]').removeClass('active')
+        //     $(this).addClass('active')
+        //     $page.animate({
+        //         scrollTop: $($.attr(this, 'href')).offset().top
+        //     }, 400);
+        //     return false;
+        // });
+    </script>
+    <script>
+        $(".button").each(function () {
+            $(this).on("mousemove", function (e) {
+                const pos = this.getBoundingClientRect();
+                const mx = e.clientX - pos.left - pos.width / 2;
+                const my = e.clientY - pos.top - pos.height / 2;
+                $(this).css("transform", "translate(" + mx * 0.15 + "px, " + my * 0.3 +
+                    "px) rotate3d(" + mx * -0.1 + ", " + my * -0.3 + ", 0, 12deg)");
+                $(this).children().eq(0).css("transform", "translate(" + mx * 0.025 + "px, " + my *
+                    0.075 + "px)");
+            });
+        });
+
+        $(".button").each(function () {
+            $(this).on("mouseleave", function () {
+                $(this).css("transform", "translate3d(0px, 0px, 0px) rotate3d(0, 0, 0, 0deg)");
+                $(this).children().eq(0).css("transform", "translate3d(0px, 0px, 0px)");
+            });
+        });
+
+        // --- CURSOR
+        $(document).on("mousemove", function (e) {
+            $(".cursor").css({
+                "left": e.pageX - 25 + "px",
+                "top": e.pageY - 25 + "px"
+            });
+        });
+    </script>
+
+
+    <script src="script/section1-script.js"></script>
+    <script src="script/section2-script.js"></script>
+    <script src="script/section3-script.js"></script>
+
+</body>
+
+</html>
