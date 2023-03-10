@@ -453,7 +453,7 @@ header {
     transition: all .7s;
     transform: scale(0.8);
     opacity: 0;
-    overflow: hidden;
+    overflow-x: hidden;
 
 
     .black-btn {
@@ -488,7 +488,7 @@ header {
     }
 
     &.section4 {
-        overflow: hidden;
+        overflow-x: hidden;
         transform: scale(0.8) translate(0, -100%);
         position: relative;
 

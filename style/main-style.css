@@ -389,7 +389,7 @@ header .content .box {
   transition: all 0.7s;
   transform: scale(0.8);
   opacity: 0;
-  overflow: hidden;
+  overflow-x: hidden;
 }
 .section .black-btn {
   margin: 30px 0 0;
@@ -412,7 +412,7 @@ header .content .box {
   opacity: 1;
 }
 .section.section4 {
-  overflow: hidden;
+  overflow-x: hidden;
   transform: scale(0.8) translate(0, -100%);
   position: relative;
 }
