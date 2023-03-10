@@ -540,6 +540,7 @@ header .content .box {
   justify-content: center;
   align-items: center;
   height: 100%;
+  overflow: hidden;
 }
 .image-slider .image-slide-item {
   display: grid;
