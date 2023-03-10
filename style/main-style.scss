@@ -669,8 +669,8 @@ header {
 
         .item {
             img.slider-image {
-                width: 120px;
-                height: 122.75px;
+                width: 100%;
+                // height: 122.75px;
                 border-radius: 20px;
                 margin: 0 0 1.6px;
                 opacity: 1;
@@ -932,11 +932,23 @@ footer {
 
     .image-slider {
         .image-slide-item {
-            grid-template-columns: 80px 80px 80px;
-            grid-auto-rows: 110px 110px 110px;
-            grid-column-gap: 60px;
-            grid-row-gap: 25px;
+            grid-template-columns: 100px 100px 100px;
+            grid-auto-rows: 160px 160px 160px;
+            grid-column-gap: 30px;
+            grid-row-gap: 15px;
+
+            .item {
+                .text-box {
+                    border-radius: 10px;
+                    padding: 0 5px;
+
+                    .position {
+                        font-size: 7px;
+                    }
+                }
+            }
         }
+
     }
 }
 
@@ -1050,7 +1062,7 @@ footer {
 
         .content {
             padding: 0 25px;
-          
+
 
             .menu {
                 display: none;
@@ -1083,6 +1095,7 @@ footer {
         font-size: 12px;
         line-height: 14px;
         padding: 14px 18px;
+        margin: 0 10px 0 0;
     }
 
     .section1-logo-content {
@@ -1145,6 +1158,10 @@ footer {
             height: auto;
             margin: 0 0 30px;
 
+            br {
+                display: none;
+            }
+
             &[data-aos=zoom-in] {
                 transform: scale(0.2) translate(0%, 100%);
             }
@@ -1170,7 +1187,7 @@ footer {
         }
 
         .image-slider {
-            height: 400px;
+            height: 50%;
 
             &[data-aos=zoom-in] {
                 transform: scale(0.2) translate(0%, -400%);
@@ -1179,6 +1196,37 @@ footer {
             &[data-aos^=zoom][data-aos^=zoom].aos-animate {
                 transform: scale(0.2) translate(0%, -400%);
                 opacity: 0;
+            }
+
+            .image-slide-item {
+                &[data-aos=zoom-in] {
+                    transform: scale(0.2) translate(0%, -400%);
+                }
+
+                &[data-aos^=zoom][data-aos^=zoom].aos-animate {
+                    transform: scale(0.2) translate(0%, -400%);
+                }
+
+                &.active {
+                    &[data-aos^=zoom][data-aos^=zoom].aos-animate {
+                        transform: translate(0%, 0px) scale(1);
+                    }
+
+                    &[data-aos=zoom-in] {
+                        transform: translate(0%, 0px) scale(1);
+                    }
+                }
+
+                &.inActive {
+                    &[data-aos^=zoom][data-aos^=zoom].aos-animate {
+                        transform: translate(0%, 0px) scale(1.7);
+                    }
+
+                    &[data-aos=zoom-in] {
+                        transform: translate(0%, 0px) scale(1.7);
+                    }
+                }
+
             }
         }
     }

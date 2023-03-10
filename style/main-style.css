@@ -559,8 +559,7 @@ header .content .box {
   z-index: 0;
 }
 .image-slider .image-slide-item .item img.slider-image {
-  width: 120px;
-  height: 122.75px;
+  width: 100%;
   border-radius: 20px;
   margin: 0 0 1.6px;
   opacity: 1;
@@ -733,10 +732,17 @@ footer .post-box .follow-item img {
     margin: 0 0 0 50px;
   }
   .image-slider .image-slide-item {
-    grid-template-columns: 80px 80px 80px;
-    grid-auto-rows: 110px 110px 110px;
-    grid-column-gap: 60px;
-    grid-row-gap: 25px;
+    grid-template-columns: 100px 100px 100px;
+    grid-auto-rows: 160px 160px 160px;
+    grid-column-gap: 30px;
+    grid-row-gap: 15px;
+  }
+  .image-slider .image-slide-item .item .text-box {
+    border-radius: 10px;
+    padding: 0 5px;
+  }
+  .image-slider .image-slide-item .item .text-box .position {
+    font-size: 7px;
   }
 }
 @media all and (max-width: 899px) {
@@ -854,6 +860,7 @@ footer .post-box .follow-item img {
     font-size: 12px;
     line-height: 14px;
     padding: 14px 18px;
+    margin: 0 10px 0 0;
   }
   .section1-logo-content {
     top: 20px;
@@ -898,6 +905,9 @@ footer .post-box .follow-item img {
     height: auto;
     margin: 0 0 30px;
   }
+  .section .text-block br {
+    display: none;
+  }
   .section .text-block[data-aos=zoom-in] {
     transform: scale(0.2) translate(0%, 100%);
   }
@@ -917,7 +927,7 @@ footer .post-box .follow-item img {
     opacity: 0;
   }
   .section .image-slider {
-    height: 400px;
+    height: 50%;
   }
   .section .image-slider[data-aos=zoom-in] {
     transform: scale(0.2) translate(0%, -400%);
@@ -925,6 +935,24 @@ footer .post-box .follow-item img {
   .section .image-slider[data-aos^=zoom][data-aos^=zoom].aos-animate {
     transform: scale(0.2) translate(0%, -400%);
     opacity: 0;
+  }
+  .section .image-slider .image-slide-item[data-aos=zoom-in] {
+    transform: scale(0.2) translate(0%, -400%);
+  }
+  .section .image-slider .image-slide-item[data-aos^=zoom][data-aos^=zoom].aos-animate {
+    transform: scale(0.2) translate(0%, -400%);
+  }
+  .section .image-slider .image-slide-item.active[data-aos^=zoom][data-aos^=zoom].aos-animate {
+    transform: translate(0%, 0px) scale(1);
+  }
+  .section .image-slider .image-slide-item.active[data-aos=zoom-in] {
+    transform: translate(0%, 0px) scale(1);
+  }
+  .section .image-slider .image-slide-item.inActive[data-aos^=zoom][data-aos^=zoom].aos-animate {
+    transform: translate(0%, 0px) scale(1.7);
+  }
+  .section .image-slider .image-slide-item.inActive[data-aos=zoom-in] {
+    transform: translate(0%, 0px) scale(1.7);
   }
   footer {
     padding: 54px 0 27px;
