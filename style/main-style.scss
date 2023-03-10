@@ -254,7 +254,7 @@ header {
         background-position: center;
         background-repeat: no-repeat;
         background-image: url(../img/section1-img/1.png);
-        transition: all .3s background-image .1s;
+        transition: all .3s, background-image .1s;
 
         &.img1 {
             background-image: url(../img/section1-img/1.png);

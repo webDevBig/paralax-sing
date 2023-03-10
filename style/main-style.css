@@ -219,7 +219,7 @@ header .content .box {
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../img/section1-img/1.png);
-  transition: all 0.3s background-image 0.1s;
+  transition: all 0.3s, background-image 0.1s;
 }
 .section1 .arc-img.img1 {
   background-image: url(../img/section1-img/1.png);

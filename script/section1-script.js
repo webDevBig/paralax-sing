@@ -1,4 +1,3 @@
-
 $(window).scroll(function () {
     var scroll = $(window).scrollTop();
     if ((75 + scroll / 60) >= 100) {
@@ -28,11 +27,12 @@ document.addEventListener('scroll', () => {
     if (scroll >= 0 && scroll < windowHeight) {
         //to remove all classes sauf .container
         conponentBG.setAttribute('class', 'arc-img');
-        conponentBG.classList.add('img1')
+        conponentBG.classList.add('img1');
     } else if (scroll >= windowHeight && scroll < 2 * windowHeight) {
         //to remove all classes sauf .container
         conponentBG.setAttribute('class', 'arc-img');
         conponentBG.classList.add('img2');
+
     } else if (scroll >= 2 * windowHeight && scroll < 3 * windowHeight) {
         //to remove all classes sauf .container
         conponentBG.setAttribute('class', 'arc-img');
