@@ -389,7 +389,6 @@ header .content .box {
   transition: all 0.7s;
   transform: scale(0.8);
   opacity: 0;
-  overflow-x: hidden;
 }
 .section .black-btn {
   margin: 30px 0 0;
@@ -403,11 +402,23 @@ header .content .box {
   transform: translate(0%, 0px) scale(1);
   opacity: 1;
 }
+.section.active .text-block[data-aos^=zoom] {
+  transform: translate(0%, 0px) scale(1);
+  opacity: 1;
+}
 .section.active img[data-aos^=zoom][data-aos^=zoom].aos-animate {
   transform: translate(0%, 0px) scale(1);
   opacity: 1;
 }
+.section.active img[data-aos^=zoom] {
+  transform: translate(0%, 0px) scale(1);
+  opacity: 1;
+}
 .section.active .image-slider[data-aos^=zoom][data-aos^=zoom].aos-animate {
+  transform: translate(0%, 0px) scale(1);
+  opacity: 1;
+}
+.section.active .image-slider[data-aos^=zoom] {
   transform: translate(0%, 0px) scale(1);
   opacity: 1;
 }
@@ -433,7 +444,15 @@ header .content .box {
   transform: translate(0%, 0px) scale(1);
   opacity: 0;
 }
+.section.inActive .text-block[data-aos^=zoom] {
+  transform: translate(0%, 0px) scale(1);
+  opacity: 0;
+}
 .section.inActive img[data-aos^=zoom][data-aos^=zoom].aos-animate {
+  transform: translate(0%, 0px) scale(1);
+  opacity: 0;
+}
+.section.inActive img[data-aos^=zoom] {
   transform: translate(0%, 0px) scale(1);
   opacity: 0;
 }
