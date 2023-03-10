@@ -13,7 +13,8 @@
   cursor: default;
 }
 
-nav {
+nav,
+.mobile {
   display: none;
 }
 
