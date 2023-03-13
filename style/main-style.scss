@@ -251,39 +251,35 @@ header {
     .arc-img {
         width: 415px;
         height: 611px;
-        background-size: 75%;
-        background-position: center;
-        background-repeat: no-repeat;
-        background-image: url(../img/section1-img/1.png);
+        // background-size: 75%;
+        // background-position: center;
+        // background-repeat: no-repeat;
+        // background-image: url(../img/section1-img/1.png);
         transition: all .3s, background-image .1s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
 
-        &.img1 {
-            background-image: url(../img/section1-img/1.png);
+        .img-container {
+            width: 75%;
+            height: 75%;
+            position: relative;
+            transition: all .3s,
         }
 
-        &.img2 {
-            background-image: url(../img/section1-img/2.png);
+        img {
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+            position: absolute;
+            transition: all .3s;
+
+            &.show {
+                opacity: 1;
+            }
+
         }
 
-        &.img3 {
-            background-image: url(../img/section1-img/3.png);
-        }
-
-        &.img4 {
-            background-image: url(../img/section1-img/4.png);
-        }
-
-        &.img5 {
-            background-image: url(../img/section1-img/5.png);
-        }
-
-        &.img6 {
-            background-image: url(../img/section1-img/6.png);
-        }
-
-        &.img7 {
-            background-image: url(../img/section1-img/7.png);
-        }
     }
 
     .section-content {
