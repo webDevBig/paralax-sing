@@ -32,7 +32,7 @@ $(document).ready(function () {
             item3.setAttribute('class', 'image-slide-item image-slide-item3');
 
         } else if ($(window).scrollTop() >= ($('.second-slider').offset().top + (2 * w)) &&
-            ($(window).scrollTop() <= ($('.second-slider').offset().top + (3 * w)))) {
+            ($(window).scrollTop() <= ($('.second-slider').offset().top + (3.5 * w)))) {
 
             section3.setAttribute('class', 'section section3');
             section3.classList.add('inActive')
@@ -44,7 +44,7 @@ $(document).ready(function () {
             item1.classList.add('inActive')
             item3.setAttribute('class', 'image-slide-item image-slide-item3');
 
-        } else if ($(window).scrollTop() >= ($('.second-slider').offset().top + (3 * w)) &&
+        } else if ($(window).scrollTop() >= ($('.second-slider').offset().top + (3.5 * w)) &&
             ($(window).scrollTop() <= ($('.second-slider').offset().top + (4.5 * w)))) {
 
             section3.setAttribute('class', 'section section3');
