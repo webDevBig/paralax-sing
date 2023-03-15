@@ -32,6 +32,9 @@ section {
     background-attachment: fixed;
     position: relative;
 }
+html {
+    scroll-behavior: smooth;
+  }
 
 body {
     font-family: var(--font-family-regular);
@@ -378,7 +381,7 @@ header {
     z-index: 3;
     height: 250vh;
     min-height: 2000px;
-    transition: all .3s, opacity .2s;
+    transition: all .3s, opacity .5s;
     background: var(--background);
     opacity: 1;
     margin: 0 0 -80vh;

@@ -33,6 +33,10 @@ section {
   position: relative;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   font-family: var(--font-family-regular);
   overflow-x: hidden;
@@ -325,7 +329,7 @@ header .content .box {
   z-index: 3;
   height: 250vh;
   min-height: 2000px;
-  transition: all 0.3s, opacity 0.2s;
+  transition: all 0.3s, opacity 0.5s;
   background: var(--background);
   opacity: 1;
   margin: 0 0 -80vh;
