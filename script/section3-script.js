@@ -29,13 +29,13 @@ $(document).ready(function () {
         }
        
         if (($(window).scrollTop() >= $('.second-slider').offset().top) &&
-            ($(window).scrollTop() <= ($('.second-slider').offset().top + (1.5 * w)))) {
+            ($(window).scrollTop() <= ($('.second-slider').offset().top + (1.3 * w)))) {
             section3.setAttribute('class', 'section section3');
             section3.classList.add('active');
             section4.setAttribute('class', 'section section4');
 
-        } else if ($(window).scrollTop() >= ($('.second-slider').offset().top + (1.5 * w)) &&
-            ($(window).scrollTop() <= ($('.second-slider').offset().top + (2.5 * w)))) {
+        } else if ($(window).scrollTop() >= ($('.second-slider').offset().top + (1.3 * w)) &&
+            ($(window).scrollTop() <= ($('.second-slider').offset().top + (2.3 * w)))) {
 
             section3.setAttribute('class', 'section section3');
             section3.classList.add('inActive')
@@ -47,8 +47,8 @@ $(document).ready(function () {
             item2.setAttribute('class', 'image-slide-item image-slide-item2');
             item3.setAttribute('class', 'image-slide-item image-slide-item3');
 
-        } else if ($(window).scrollTop() >= ($('.second-slider').offset().top + (2.5 * w)) &&
-            ($(window).scrollTop() <= ($('.second-slider').offset().top + (3.3 * w)))) {
+        } else if ($(window).scrollTop() >= ($('.second-slider').offset().top + (2.3 * w)) &&
+            ($(window).scrollTop() <= ($('.second-slider').offset().top + (3.1 * w)))) {
 
             section3.setAttribute('class', 'section section3');
             section3.classList.add('inActive')
@@ -60,7 +60,7 @@ $(document).ready(function () {
             item1.classList.add('inActive')
             item3.setAttribute('class', 'image-slide-item image-slide-item3');
 
-        } else if ($(window).scrollTop() >= ($('.second-slider').offset().top + (3.3 * w)) &&
+        } else if ($(window).scrollTop() >= ($('.second-slider').offset().top + (3.1 * w)) &&
             ($(window).scrollTop() <= ($('.second-slider').offset().top + (4.5 * w)))) {
 
             section3.setAttribute('class', 'section section3');
