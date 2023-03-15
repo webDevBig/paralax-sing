@@ -27,16 +27,16 @@ a {
   text-align: center;
 }
 
-/* Backgrounds will cover all the section
-* --------------------------------------- */
 section {
   background-size: cover;
   background-attachment: fixed;
+  position: relative;
 }
 
 body {
   font-family: var(--font-family-regular);
   overflow-x: hidden;
+  background: var(--background);
 }
 
 .content {
@@ -316,14 +316,42 @@ header .content .box {
 }
 
 .section2 {
+  bottom: 0;
+  width: 100vw;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
   position: relative;
-  z-index: 2;
-  height: 2000px;
-  transition: all 0.3s;
+  z-index: 3;
+  height: 250vh;
+  min-height: 2000px;
+  transition: all 0.3s, opacity 0.2s;
   background: var(--background);
+  opacity: 1;
+  margin: 0 0 -80vh;
+}
+.section2.hide {
+  animation: hide-text 0.3s ease-in-out both;
+  opacity: 0;
+}
+.section2.show {
+  animation: show-text 0.3s ease-in-out both;
+}
+@keyframes hide-text {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+@keyframes show-text {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
 }
 .section2 .content {
   width: 100%;
@@ -612,7 +640,7 @@ footer {
   line-height: 14px;
   position: relative;
   z-index: 2;
-  margin: -5px 0 0;
+  margin: -5px 0 -100vh;
 }
 footer .content {
   padding: 0 33px 0 0;

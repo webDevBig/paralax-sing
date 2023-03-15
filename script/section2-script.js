@@ -6,10 +6,14 @@ function setDotOpacity(dotNumber, opacity) {
 $(document).ready(function () {
     var hdot = $('.section2').height() / (24);
     $(window).scroll(function () {
-        //Проверяем что внутри div-second
+
         if (($(window).scrollTop() >= $('.section2').offset().top) &&
             ($(window).scrollTop() <= ($('.section2').offset().top + $('.section2')
                 .height()))) {
+            // section2.setAttribute('class', 'section2 show');
+
+            // $('.section2').removeClass('hide')
+            // section2.style.opacity = '1'
             var dotCenter = Math.round(($(window).scrollTop() - $('.section2').offset().top) /
                 hdot);
 
@@ -22,7 +26,11 @@ $(document).ready(function () {
             for (var i = dotCenter + 1; i <= 10; i++) {
                 setDotOpacity(i, '#DCDCF4');
             }
-        }
+        } 
+        // else {
+        //     // $('.section2').addClass('hide')
+        //     section2.setAttribute('class', 'section2 hide');
+        // }
     });
 
 })
