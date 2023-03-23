@@ -32,9 +32,10 @@ section {
     background-attachment: fixed;
     position: relative;
 }
+
 html {
     scroll-behavior: smooth;
-  }
+}
 
 body {
     font-family: var(--font-family-regular);
@@ -390,6 +391,7 @@ header {
         animation: hide-text .3s ease-in-out both;
         opacity: 0;
     }
+
     &.show {
         animation: show-text .3s ease-in-out both;
         // opacity: 1;
@@ -407,6 +409,7 @@ header {
         }
 
     }
+
     @keyframes show-text {
         from {
             opacity: 0;
@@ -491,6 +494,38 @@ header {
         margin: 30px 0 0;
     }
 
+    &.section3 {
+        transform: scale(1);
+
+        .text-block {
+            [data-aos=fade-right] {
+                transform: translate3d(-200px,0,0);
+            }
+        }
+
+        // img {
+        //     &[data-aos=fade-right] {
+        //         transform: translate3d(-200px,0,0);
+        //     }
+        //     &[data-aos^=fade][data-aos^=fade].aos-animate {
+        //         opacity: 1;
+        //         transform: translateZ(0);
+        //     }
+        // }
+        // &.active{
+        //     img {
+        //         &[data-aos=fade-right] {
+        //             transform: translate3d(-200px,0,0);
+        //         }
+        //         &[data-aos^=fade][data-aos^=fade].aos-animate {
+        //             opacity: 1;
+        //             transform: translateZ(0);
+        //         }
+        //     }
+        // }
+    }
+
+
     &.active {
         visibility: visible;
         transform: scale(1);
@@ -532,6 +567,7 @@ header {
             }
         }
     }
+
 
     &.section4 {
         overflow: hidden;

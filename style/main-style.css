@@ -420,6 +420,12 @@ header .content .box {
 .section .black-btn {
   margin: 30px 0 0;
 }
+.section.section3 {
+  transform: scale(1);
+}
+.section.section3 .text-block [data-aos=fade-right] {
+  transform: translate3d(-200px, 0, 0);
+}
 .section.active {
   visibility: visible;
   transform: scale(1);
