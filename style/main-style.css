@@ -1057,7 +1057,7 @@ footer .post-box .follow-item img {
     margin: 16px 0 0;
   }
 }
-@media all and (max-width: 400px) {
+@media all and (max-width: 420px) {
   .black-btn > span {
     font-size: 12px;
   }
