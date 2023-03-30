@@ -1481,6 +1481,13 @@ footer {
         }
     }
 
+    .image-slider {
+        margin: 0 0 10px;
+        .image-slide-container {
+            justify-content: flex-start;
+        }
+    }
+
 }
 
 

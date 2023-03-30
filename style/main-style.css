@@ -1119,6 +1119,12 @@ footer .post-box .follow-item img {
   .section img {
     max-width: 270px;
   }
+  .image-slider {
+    margin: 0 0 10px;
+  }
+  .image-slider .image-slide-container {
+    justify-content: flex-start;
+  }
 }
 @media all and (max-height: 649px) {
   .image-slider .image-slide-item .item img.slider-image {
